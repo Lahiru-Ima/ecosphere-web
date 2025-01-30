@@ -38,13 +38,18 @@ body {
 
 .youtube-video {
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
-  padding: 20px; 
+  text-align: center; 
+  padding: 20px;
 }
 
 .yt-video {
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Header and Navigation */
@@ -141,6 +146,11 @@ nav a:hover {
     opacity: 1; 
     pointer-events: none;
 }
+
+iframe {
+  border: none;
+}
+
 
 .hero {
   position: relative;
