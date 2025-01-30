@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our workshops on sustainable farming, animal care, and organic gardening">
+    <title>Workshops - EcoSphere Urban Farm & Sanctuary</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="EcoSphere Logo" width="50" height="50"></a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="workshops.html" class="active">Workshops</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="workshops-intro">
+                <h2>Learn & Grow With Us</h2>
+                <p>Join our interactive workshops and discover how to grow your own food, care for animals, and live sustainably.</p>
+            </div>
+
+            <div class="workshops-schedule">
+                <h2>Upcoming Workshops</h2>
+                <div class="workshop-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Workshop</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Cost</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody id="workshopsList">
+                            <tr>
+                                <td>Hydroponics 101</td>
+                                <td>March 10</td>
+                                <td>10 AM - 12 PM</td>
+                                <td>$25</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Organic Gardening</td>
+                                <td>March 15</td>
+                                <td>1 PM - 3 PM</td>
+                                <td>$30</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>Ethical Animal Care</td>
+                                <td>March 20</td>
+                                <td>11 AM - 1 PM</td>
+                                <td>$20</td>
+                               
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="learning-outcomes">
+                <h2>What You'll Learn</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-flask fa-3x"></i>
+                        <h3>Hydroponic Systems</h3>
+                        <p>Learn how to set up and maintain a hydroponic or aquaponic system at home.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-leaf fa-3x"></i>
+                        <h3>Organic Techniques</h3>
+                        <p>Master techniques for organic gardening and composting.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heart fa-3x"></i>
+                        <h3>Animal Husbandry</h3>
+                        <p>Learn best practices for ethical animal husbandry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="contact.html" class="btn btn-primary">Register Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>EcoSphere Urban Farm</h3>
+                <p>123 Greenway St, Seattle, WA</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@ecospherefarm.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 EcoSphere Urban Farm & Sanctuary</p> 
+            <p>Tharuki Kumaravila | CB014053</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

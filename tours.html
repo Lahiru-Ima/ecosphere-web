@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience sustainable farming through tours and volunteer opportunities">
+    <title>Tours & Volunteer - EcoSphere Urban Farm & Sanctuary</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="EcoSphere Logo" width="50" height="50"></a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="tours.html" class="active">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="tours-intro">
+                <h2>Visit & Volunteer</h2>
+                <p>Experience the magic of sustainable farming and ethical animal care through our farm tours and volunteer programs.</p>
+            </div>
+
+            <div class="farm-tours">
+                <h2>Farm Tours</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt fa-3x"></i>
+                        <h3>Guided Tours</h3>
+                        <p>Learn about our innovative farming techniques and meet our rescued animals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-hands-helping fa-3x"></i>
+                        <h3>Hands-on Activities</h3>
+                        <p>Participate in planting, harvesting, and feeding animals.</p>
+                    </div>
+                </div>
+
+                <div class="tour-schedule">
+                    <h3>Tour Schedule</h3>
+                    <ul>
+                        <li><strong>Weekdays:</strong> 10 AM - 2 PM</li>
+                        <li><strong>Weekends:</strong> 9 AM - 4 PM</li>
+                    </ul>
+                    <br>
+                    <a href="contact.html" class="btn btn-primary">Book a Tour</a>
+                </div>
+            </div>
+
+            <div class="volunteer-opportunities">
+                <h2>Volunteer Opportunities</h2>
+                <p>Make a difference by volunteering at EcoSphere! Help with:</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-seedling fa-3x"></i>
+                        <h3>Plant Care</h3>
+                        <p>Watering, harvesting, and composting.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-paw fa-3x"></i>
+                        <h3>Animal Care</h3>
+                        <p>Feeding, cleaning, and enrichment activities.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                        <h3>Education Programs</h3>
+                        <p>Assisting with workshops and farm events.</p>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <a href="contact.html" class="btn btn-primary">Sign Up to Volunteer</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>EcoSphere Urban Farm</h3>
+                <p>123 Greenway St, Seattle, WA</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@ecospherefarm.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 EcoSphere Urban Farm & Sanctuary</p> 
+            <p>Tharuki Kumaravila | CB014053</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
