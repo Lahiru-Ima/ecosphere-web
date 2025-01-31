@@ -1,0 +1,20 @@
+[
+    {
+        "workshop": "Hydroponics 101",
+        "date": "March 10",
+        "time": "10 AM - 12 PM",
+        "cost": "$25"
+    },
+    {
+        "workshop": "Organic Gardening",
+        "date": "March 15",
+        "time": "1 PM - 3 PM",
+        "cost": "$30"
+    },
+    {
+        "workshop": "Ethical Animal Care",
+        "date": "March 20",
+        "time": "11 AM - 1 PM",
+        "cost": "$20"
+    }
+]

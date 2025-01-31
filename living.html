@@ -29,10 +29,12 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="banner-container">
-                <img src="images/IMG_1132.jpeg" alt="Urban Farm" class="banner-img">
-            </div>
+        <section class="hero">  
+            <picture class="banner-container">
+            <source srcset="images/IMG_1132.webp" type="image/webp">
+            <img src="images/IMG_1132.jpeg" alt="Sustainable Living" class="banner-img">
+        </picture>
+        <div class="overlay"></div>  
             <div class="hero-content">
                 <h1>Practical Tips for a Greener Future</h1>
                 <p>At EcoSphere Urban Farm & Sanctuary, we believe that small, mindful choices can lead to a big impact on the environment.</p>
@@ -40,9 +42,10 @@
         </section>
 
         <div class="practice-item">
-            <div class="practice-image">
+            <picture class="practice-image">
+                <source srcset="images/IMG_1045.webp" type="image/webp">
                 <img src="images/IMG_1045.jpeg" alt="Urban Farming">
-            </div>
+            </picture>
             <div class="practice-content">
                 <h2>Urban Farming: Growing Your Own Food</h2>
                 <ul class="practice-list">
@@ -78,10 +81,11 @@
             </div>
         </div>
         
-        <div class="practice-item reverse"> 
-            <div class="practice-image">
-                <img src="images/IMG_1093.jpeg" alt="Waste Reduction">
-            </div>
+        <div class="practice-item reverse">   
+        <picture class="practice-image">
+            <source srcset="images/IMG_1093.webp" type="image/webp">
+            <img src="images/IMG_1093.jpeg" alt="Waste Reduction">
+        </picture> 
             <div class="practice-content">
                 <h2>Reducing Waste in Daily Life</h2>
                 <ul class="practice-list">
@@ -118,9 +122,10 @@
         </div>
         
         <div class="practice-item">
-            <div class="practice-image">
+            <picture class="practice-image">
+                <source srcset="images/IMG_1044.webp" type="image/webp">
                 <img src="images/IMG_1044.jpeg" alt="Ethical Animal Care">
-            </div>
+            </picture> 
             <div class="practice-content">
                 <h2>Ethical Animal Care for Small-Scale Farming</h2>
                 <ul class="practice-list">
@@ -177,5 +182,10 @@
             <p>Tharuki Kumaravila | CB014053</p>
         </div>
     </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

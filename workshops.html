@@ -29,10 +29,11 @@
     </header>
 
     <main><section class="hero">    
-        <div class="banner-container">    
-        <img src="images/IMG_1130.jpeg" alt="Urban Farm" class="banner-img">  
-        </div> 
-        <div class="overlay"></div>
+            <picture class="banner-container">
+            <source srcset="images/IMG_1130.webp" type="image/webp">
+            <img src="images/IMG_1130.jpeg" alt="Workshop" class="banner-img">
+        </picture>
+        <div class="overlay"></div>     
         <div class="hero-content">
             <h1>Community Workshops at EcoSphere Urban Farm & Sanctuary</h1>
             <p>At EcoSphere Urban Farm & Sanctuary, we believe that education is key to creating a more sustainable and compassionate world. Our interactive community workshops provide hands-on learning experiences for individuals, families, and groups interested in urban farming, ethical animal care, and organic gardening.</p>
@@ -55,35 +56,14 @@
                                 <th>Date</th>
                                 <th>Time</th>
                                 <th>Cost</th>
-                              
                             </tr>
                         </thead>
                         <tbody id="workshopsList">
-                            <tr>
-                                <td>Hydroponics 101</td>
-                                <td>March 10</td>
-                                <td>10 AM - 12 PM</td>
-                                <td>$25</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Organic Gardening</td>
-                                <td>March 15</td>
-                                <td>1 PM - 3 PM</td>
-                                <td>$30</td>
-                               
-                            </tr>
-                            <tr>
-                                <td>Ethical Animal Care</td>
-                                <td>March 20</td>
-                                <td>11 AM - 1 PM</td>
-                                <td>$20</td>
-                               
-                            </tr>
+                            <!-- Workshops will be loaded here -->
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div>            
 
             <div class="regular-workshops">
                 <h2>Our Regular Workshops</h2>
@@ -207,6 +187,28 @@
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('nav ul').classList.toggle('active');
         });
+
+        // Load workshops from JSON file
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("json/events.json")
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.getElementById("workshopsList");
+            tableBody.innerHTML = ""; 
+
+            data.forEach(event => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${event.workshop}</td>
+                    <td>${event.date}</td>
+                    <td>${event.time}</td>
+                    <td>${event.cost}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        })
+        .catch(error => console.error("Error loading workshops:", error));
+});
     </script>
 </body>
 </html>

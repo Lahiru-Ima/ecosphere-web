@@ -127,9 +127,9 @@ nav a:hover {
   z-index: -1;
 }
 
-.banner-img {
-  width: 100vw;
-  height: 100vh;
+.banner-container img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -205,6 +205,7 @@ iframe {
   text-align: center;
 }
 
+/* commom sections */
 
 .mission-section,
 .story-section,
@@ -419,6 +420,8 @@ th {
   transform: translateY(-2px);
 }
 
+/* Features section */
+
 .features-grid {
   display: flex;
   gap: 20px;
@@ -462,12 +465,13 @@ th {
   line-height: 1.5;
 }
 
-/* Make sure links don't have default styles */
 .feature-card:hover, 
 .feature-card:focus {
   text-decoration: none;
   color: inherit;
 }
+
+/* Contact section */
 
 .contact-container {
   max-width: var(--max-width);
@@ -520,6 +524,8 @@ th {
   margin-right: 15px;
   width: 24px;
 }
+
+/* form section */
 
 .form-group {
   margin-bottom: 1.5em;
@@ -575,6 +581,8 @@ th {
   background-color: #e0b040;
     transform: translateY(-2px);
 }
+
+/* Map */
 
 #map {
     height: 400px;
@@ -852,16 +860,25 @@ footer {
 
 /* Image Styling */
 .section-img {
-  width: 40%;
+  display: block;
+  width: 100%;
   max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.section-img img {
+  width: 100%;
   border-radius: 12px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
-.section:hover .section-img {
+.section-img:hover img {
   transform: scale(1.05);
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 900px) {
